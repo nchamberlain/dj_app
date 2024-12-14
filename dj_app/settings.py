@@ -118,10 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticoutput")
 
 # Uncomment the following line if you want to store static files in other locations
 # Notice the comma at the end, that is the list of locations that will be added
+# Static files served ok on DigitalOcean without this setting on 12/14/24
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 # Default primary key field type
